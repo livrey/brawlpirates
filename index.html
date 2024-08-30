@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><html lang="ru"><head>
+<!DOCTYPE html><html lang="ru"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <title>Черепа</title>
@@ -339,8 +339,8 @@
 </head>
 <body>
     <div id="notification" style="display: block; top: 10%; opacity: 1;">
-   разыгрываем ваучеры!
-    <button class="notification-button" onclick="window.location.href='https://t.me/negociokazik';">Перейти</button>
+   estamos distribuindo vouchers!
+    <button class="notification-button" onclick="window.location.href='https://t.me/+X9rrOI_bz5A3MjBi';">Go over</button>
     </div>
     <div class="container">
         <img src="images/pirates1.png" alt="Череп 1" id="skull1">
@@ -349,18 +349,18 @@
         <img src="images/pirates3.png" alt="Алмаз" id="diamond" class="diamond" style="display: none;">
     </div>
     <div class="button-container">
-    <button class="start-button" onclick="openModal()">Начать</button>
-    <button class="return-button" onclick="location.href='https://negociowin.ru/'">Вернуться</button>
+    <button class="start-button" onclick="openModal()">Para começar</button>
+    <button class="return-button" onclick="location.href='https://negociowin.ru/'">Return</button>
     <div class="business-name">
        <img src="images/pirates1.svg" alt="Telegram Icon" style="vertical-align: middle; margin-right: 10px; width: 60px; height: 60px;">
-        N$GOCIO
+        RIO
     </div>
 </div>
     <div id="modal">
         <div class="modal-content">
              <button class="close-button" onclick="closeModal()">✕</button>
             <p class="hash-id-text">GAME HASH ID </p>
-            <input type="text" id="hashIdInput" placeholder="Введите hash id" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите hash id'" onkeydown="handleKeyPress(event)">
+            <input type="text" id="hashIdInput" placeholder="Entrar hash id" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Entrar hash id'" onkeydown="handleKeyPress(event)">
             <button class="modal-button" onclick="validateAndStartShuffle()">OK</button>
         </div>
     </div>
@@ -384,10 +384,10 @@
     
     if (hashId.length === 0) {
         input.classList.add('error');
-        input.placeholder = 'Введите hash id';
+        input.placeholder = 'Entrar hash id';
     } else if (hashId.length !== 128) {
         input.classList.add('error');
-        input.placeholder = 'Неверный Hash ID';
+        input.placeholder = 'Incorreto Hash ID';
         input.value = ''; // Очистка поля ввода
     } else {
         input.classList.remove('error');
@@ -437,7 +437,7 @@
         }
 
        function displayRandomMessage() {
-            const messages = ["Правый череп", "По Середине", "Левый череп"];
+            const messages = ["Crânio direito", "No meio", "Crânio esquerdo"];
             const skullIds = ["skull3", "skull2", "skull1"];
             const randomIndex = Math.floor(Math.random() * messages.length);
             document.getElementById('message').textContent = messages[randomIndex];
